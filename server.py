@@ -103,7 +103,7 @@ while True:
 		print("Something else went wrong")
 		exit()	
 	else:
-		print(f"Connection accepted from {addr}")
+		print(f"Connection accepted from {addr}\n")
 	
 	mess="Welcome to the Server"
 	message=mess.encode()
@@ -148,7 +148,7 @@ while True:
 		cmessage=base64.b64decode(cmess)
 		#TO CHECK IF CLIENT HAS CLOSED CONNECTION OR NOT
 		if len(cmessage)!=0:
-			print("client: " + cmessage.decode())
+			print("Client: " + cmessage.decode())
 		else:
 			print("Connection Closed by Client")
 			clientSock.close()
