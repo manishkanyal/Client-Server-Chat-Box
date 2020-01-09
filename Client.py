@@ -82,7 +82,8 @@ while True:
 		clientSocket.close()
 		exit()
 	else:
-			print(f"[+] Connected to {host} successfully")
+			print(f"[+] Connected to {host} successfully\n")
+			
 	
 	#RECEVING MESSAGE FROM SERVER
 	# SENDER has sent message at base64 format so after receiving we have to decode it into byte form and further decode it make it readable
@@ -110,7 +111,7 @@ while True:
 		smessage=base64.b64decode(smess)
 		# CHECKING CONNECTION IS CLOSED BY SERVER OR NOT
 		if len(smessage)!=0:
-			print("Client: " + smessage.decode())
+			print("Server: " + smessage.decode())
 		else:
 			print("[-] Connection closed")
 			clientSocket.close()
