@@ -120,7 +120,7 @@ while True:
 		#SENDING MESSAGE TO SERVER	
 		# message must be sent in byte string not in string . So  before sending we are encoding the message which will return message in byte form and then encoding it into base64 beore sending 
 		try:	
-			cmess=input("")
+			cmess=input("Client:")
 		except socket.error:
 			print("[-] CONNECTION ERROR")
 			clientSocket.close()
