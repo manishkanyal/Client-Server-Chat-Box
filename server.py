@@ -154,7 +154,7 @@ while True:
 			clientSock.close()
 			break;
 			
-		smess=input("")
+		smess=input("Server:")
 		# TO SEND EMPTY MESSAGE SO THAT CONNECTION CAN BE MAINTAINED
 		if len(smess)==0:	
 			smess=" "
